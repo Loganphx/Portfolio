@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-contact',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
-
+  constructor(private titleService: Title) {
+    this.titleService.setTitle("Logan Ingram - Portfolio");
+  }
 }

@@ -1,1 +1,131 @@
-<p>resume works!</p>
+<div class="container text-center">
+  <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+
+  <div class="pb-2">
+  <accordion [isAnimated]="true" class="shadow">
+    <accordion-group [(isOpen)]="isWorkExperienceOpen">
+      <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+        <div style="visibility: hidden;">></div>
+        <div class="btn-link">Work Experience</div>
+
+        <div style="width:10.95px;">
+          <div *ngIf="!isWorkExperienceOpen" style="color:white;">></div>
+          <div *ngIf="isWorkExperienceOpen" style="color:white;">v</div>
+        </div>
+      </button>
+
+      <div style="text-align: left">
+        <h2 class="mb-0">Software Engineer</h2>
+        <h3 class="text-primary">Rebirth Studios</h3>
+        <ul>
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, seed do elusmod tempor incididunt ut labore et dolore magna aliqua</li>
+          <li>Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis</li>
+          <li>Iaculis eu non diam phaselus vestibulum lorem sed risus</li>
+          <li>Fusce id velit ut tortor pretium</li>
+          <li>Varius sit amet mattis vulputate enim nulla aliquet porttitor</li>
+        </ul>
+      </div>
+      <hr>
+      <div style="text-align: left">
+        <h2 class="mb-0">Freelance Software Engineer</h2>
+        <h3 class="text-primary">Data Annotation</h3>
+        <ul>
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, seed do elusmod tempor incididunt ut labore et dolore magna aliqua</li>
+          <li>Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis</li>
+          <li>Iaculis eu non diam phaselus vestibulum lorem sed risus</li>
+          <li>Fusce id velit ut tortor pretium</li>
+          <li>Varius sit amet mattis vulputate enim nulla aliquet porttitor</li>
+        </ul>
+      </div>
+    </accordion-group>
+
+    <accordion-group [(isOpen)]="isEducationOpen">
+      <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+        <div style="visibility: hidden;">></div>
+        <div class="btn-link">Education</div>
+
+        <div style="width:10.95px;">
+          <div *ngIf="!isEducationOpen" style="color:white;">></div>
+          <div *ngIf="isEducationOpen" style="color:white;">v</div>
+        </div>
+      </button>
+
+      <div style="text-align: left;">
+        <h2 class="mb-0">High School Diploma in Computer Science</h2>
+        <h3 class="text-primary">Westwood High School</h3>
+        <ul>
+          <li>Graduated in May 2020</li>
+          <li>Graduated with a 4.0+ GPA</li>
+        </ul>
+      </div>
+    </accordion-group>
+
+    <accordion-group [(isOpen)]="isCertificationsOpen">
+      <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+        <div style="visibility: hidden;">></div>
+        <div class="btn-link">Certifications</div>
+
+        <div style="width:10.95px;">
+          <div *ngIf="!isCertificationsOpen" style="color:white;">></div>
+          <div *ngIf="isCertificationsOpen" style="color:white;">v</div>
+        </div>
+      </button>
+
+      <div style="text-align: left;">
+      <h3>Google - Operating Systems and You: Becoming a Power User</h3>
+        <ul>
+          <li>Obtained July 2023</li>
+          <li>#CWYGEYXFYV4B</li>
+        </ul>
+        <h3>Google - Technical Support Fundamentals</h3>
+        <ul>
+          <li>Obtained July 2023</li>
+          <li>#HXRNKQU5RRZD</li>
+        </ul>
+
+      </div>
+    </accordion-group>
+
+    <accordion-group [(isOpen)]="isSkillsOpen">
+      <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+        <div style="visibility: hidden;">></div>
+        <div class="btn-link">Skills</div>
+
+        <div style="width:10.95px;">
+          <div *ngIf="!isSkillsOpen" style="color:white;">></div>
+          <div *ngIf="isSkillsOpen" style="color:white;">v</div>
+        </div>
+      </button>
+
+      <div class="row" style="text-align: left;">
+        <div class="col">
+          <h1>Programming Languages:</h1>
+          <ul>
+            <li>C#</li>
+            <li>TypeScript</li>
+            <li>Python</li>
+            <li>Java</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h1>Frameworks:</h1>
+          <ul>
+            <li>Angular</li>
+            <li>React</li>
+            <li>ASP.NET</li>
+            <li>Node.JS</li>
+            <li>Django</li>
+          </ul>
+        </div><div class="col">
+          <h1>Other Skills:</h1>
+          <ul>
+            <li>Source Control via Git</li>
+            <li>MVC Architecture</li>
+            <li>Agile Development</li>
+          </ul>
+        </div>
+      </div>
+    </accordion-group>
+  </accordion>
+  </div>
+</div>
