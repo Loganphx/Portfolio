@@ -54,6 +54,6 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v5
         with:
-          context: "{{defaultContext}}:API"
+          context: "{{defaultContext}}"
           push: true
           tags: loganphx/portfolio:latest
