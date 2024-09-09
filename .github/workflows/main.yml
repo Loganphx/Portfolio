@@ -44,6 +44,9 @@ jobs:
     needs: angular
     steps:
       -
+        name: Pull Repository
+        run: git pull 
+      -
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
       -
