@@ -20,9 +20,9 @@ jobs:
         with:
           node-version: 18.x
       - name: NPM Install
-        run: npm install --prefix client
+        run: npm install
       - name: NG Build
-        run: npm run build --prefix client
+        run: npm run build
       - name: commit files
         run: git add . 
       - name: commit changed files
