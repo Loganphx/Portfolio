@@ -21,6 +21,8 @@ jobs:
           node-version: 18.x
       - name: NPM Install
         run: npm install
+      - name: Git Pull
+        run: git pull
       - name: NG Build
         run: npm run build
       - name: commit files
